@@ -1,0 +1,20 @@
+<head>
+  <title>Like Photo</title>
+</head>
+<body>
+  <div>
+    <h1> Select a picture to Like </h1>
+    {% if pictures %}
+      {% for picture in pictures %}
+      <form method="POST" enctype="multipart/form-data" action="/likePhoto">
+      <div class ="form-group">
+      <input type="radio"
+             name= "likePhoto"
+             value=
+             {{picture[1]}}><img src='data:image/png;base64, {{picture[0]}}'/><br>
+      </div>
+      {% endfor %}
+      {% endif %}
+      <button type="submit" value="comment">Submit</button>
+      <li><a href='/'>Home</a></li>
+      </body>

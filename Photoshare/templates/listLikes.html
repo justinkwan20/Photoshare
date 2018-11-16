@@ -1,0 +1,23 @@
+<head>
+  <title>Like Photo</title>
+</head>
+<body>
+  <div>
+    <h1> Liked Photos </h1>
+    {% if pictures %}
+      {% if likes %}
+      {% if likeness %}
+      {% for like in likes %}
+      {% for picture in pictures %}
+      {% if like[0] == picture[1] %}
+      <img src='data:image/png;base64, {{picture[0]}}'/><br>
+      {{likeness}}
+      </div>
+      {% endif %}
+      {% endfor %}
+      {% endfor %}
+      {% endif %}
+      {% endif %}
+      {% endif %}
+      <li><a href='/'>Home</a></li>
+      </body>

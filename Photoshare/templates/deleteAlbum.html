@@ -1,0 +1,20 @@
+<head>
+    <title> Album Delete </title>
+</head>
+<body>
+  <div>
+    <h1> Delete An Album</h1>
+    {% if albums %}
+      {% for album in albums %}
+      <form method="POST" enctype="multipart/form-data" action="/deleteAlbums">
+      <div class ="form-group">
+      <input type="radio"
+             name= "albumName"
+             value=
+             {{album[0][0]}}>{{album[1]}}<br>
+      </div>
+      {% endfor %}
+    {% endif %}
+    <input type="submit" value="Upload" />
+</div>
+</body>

@@ -1,0 +1,15 @@
+<head>
+  <title> Photo Comment </title>
+</head>
+<body>
+
+    <h1> Comments With Photos </h1>
+    {% if photos %}
+      <img src='data:image/png;base64, {{photos}}'/>
+    {% endif %}
+    {% if comment %}
+    <h4> Comment : {{comment}}</h4>
+    {% endif %}
+
+    <li><a href = '/' Home </a></li>
+</body>

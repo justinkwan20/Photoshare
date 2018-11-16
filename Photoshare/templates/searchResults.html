@@ -1,0 +1,23 @@
+<!-- Author: Craig Einstein -->
+<!-- This is how to write a comment in HTML! -->
+
+<html>
+
+  <head>
+    <title>Search Results</title> <!-- title of the webpage -->
+  </head>
+
+  <body>
+
+    <h1>Your Results of Search</h1>
+      {% if photos %}
+        {% for photo in photos %}
+          <li><img src='data:image/png;base64, {{photo}}'/></li>
+        {% endfor %}
+      {% endif %}
+
+    <li><a href="/search">SEARCH</a></li> <!-- link to the search page -->
+    <li><a href="/">Home</a></li>
+  </body>
+
+</html>

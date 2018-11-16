@@ -1,0 +1,35 @@
+<head>
+  <title>Select the Photos you want in your Album </title>
+</head>
+    <div class = "title">
+    <h1> Select from all these photos which you want to be in your Album</h1>
+    </div>
+<body>
+  <div>
+    <h3>Select the Album which you want the photos with:</h3>
+  {% if albums %}
+    {% for album in albums %}
+    <form method="post" enctype="multipart/form-data" action="/viewAlbums">
+    <div class ="form-group">
+    <input type="radio"
+           name= "albumName"
+           value=
+           {{album[0]}}>{{album[1]}}<br>
+    </div>
+    {% endfor %}
+  {% endif %}
+  <h5> Select the Photos which you want in that Album: </h5>
+  {% if photoExist %}
+    {% for photo in photoExist %}
+    <form method="post" enctype="multipart/form-data" action="/viewAlbums">
+    <div class ="form-group">
+    <input type="radio" name="photoAlbum" value="{{photo[1]}}" checked>
+    <img src='data:image/png;base64, {{photo[0]}}'/>
+    </div>
+    {% endfor %}
+  {% endif %}
+  <button type="submit" value="Search" class="btn btn-default submit">Submit</button>
+  </form>
+  </div>
+  <li><a href='/'>Home</a></li>    
+</body>

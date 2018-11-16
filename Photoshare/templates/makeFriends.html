@@ -1,0 +1,24 @@
+<head>
+  <title>Make FRIENDS</title>
+</head>
+<body>
+    {% if userList %}
+    <h1> Select People to be your friend </h1>
+        {% for user in userList %}
+      <form method="post" enctype="multipart/form-data" action="/makeFriends">
+      <div class ="form-group">
+      <input type="radio" name="friend" value={{user[1]}}>{{user[0]}}<br>
+      </div>
+      {% endfor %}
+    {% endif %}
+    {% if message %}
+    <h2> {{message}} </h2>
+    {% endif %}
+    {% if friends %}
+      {% for friend in friends %}
+        <h3> {{friend}}</h3>
+      {% endfor %}
+    {% endif %}
+      <button type="submit" value="comment">Submit</button>
+      <li><a href='/'>Home</a></li>
+  </body>

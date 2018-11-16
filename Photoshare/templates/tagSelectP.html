@@ -1,0 +1,20 @@
+<head>
+  <title>Select the tags</title>
+</head>
+<body>
+  <div>
+    <h1> Select the photos you want from tag</h1>
+    {% if tags %}
+      {% for tag in tags %}
+      <form method="POST" enctype="multipart/form-data" action="/tagSelectP">
+      <div class ="form-group">
+      <input type="radio"
+             name= "tag"
+             value=
+             {{tag}}>{{tag}}<br>
+      </div>
+      {% endfor %}
+      {% endif %}
+      <button type="submit" value="comment">Submit</button>
+      <li><a href='/'>Home</a></li>
+      </body>

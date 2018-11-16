@@ -1,0 +1,21 @@
+<head>
+  <title>Commment Picture </title>
+</head>
+<body>
+    {% if pictures %}
+    <h1> Here are the Pictures to comment </h1>
+        {% for photo in pictures %}
+      <form method="post" enctype="multipart/form-data" action="/comments">
+      <div class ="form-group">
+      <input type="radio" name="commentsPID" value={{photo[0]}} checked>
+      <img src='data:image/png;base64, {{photo[1]}}'/>
+
+      </div>
+
+      {% endfor %}
+    {% endif %}
+    <label for="commentT">Comment:</label>
+    <input type="text" name="commentT" /><br />
+    <button type="submit" value="comment">Submit</button>
+    <li><a href='/'>Home</a></li>
+</body>

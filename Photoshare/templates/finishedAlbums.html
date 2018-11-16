@@ -1,0 +1,21 @@
+<head>
+  <title>Album Pictures </title>
+</head>
+<body>
+  <div>
+    <h1> Here are the Pictures in your album </h1>
+  {% if albums %}
+    {% if photoExist %}
+      {% for album in albums %}
+        <li>{{album[1]}}<br>
+          {% for photo in photoExist %}
+          {% if photo[2] == album[0] %}
+          <img src='data:image/png;base64, {{photo[0]}}'/></li>
+    {% endif %}
+    {% endfor %}
+    {% endfor %}
+    {% endif %}
+    {% endif %}
+    </div>
+    <li><a href='/'>Home</a></li>
+</body>

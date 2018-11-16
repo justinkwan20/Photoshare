@@ -1,0 +1,34 @@
+<head>
+  <title> These are the Photos </title>
+</head>
+<div class "title">
+  <h1> This is the Photos </h1>
+</div>
+  {% if photoExist %}
+  {% for photo in photoExist %}
+      {% if tags %}
+       {% for tag in tags %}
+{% if comments %}
+    {% for comments in comments %}
+        {% if photo[2] == comments[0] == tag[0] %}
+        <img src='data:image/png;base64, {{photo[0]}}'/></li>
+        <h6> {{photo[1]}}</h6>
+        <h5>{{comments[1]}} Date: {{comments[2]}}</h5>
+        <h6> TAG:{{tag[1]}}</h6>
+  {% endif %}
+  {% endfor %}
+  {% endif %}
+    {% if photo[2] == tag[0] %}
+    <img src='data:image/png;base64, {{photo[0]}}'/></li>
+    <h7> {{photo[1]}}</h7>
+    <h7> TAG:{{tag[1]}}</h7>
+    {% endif %}
+  {% endfor %}
+  {% endif %}
+    <img src='data:image/png;base64, {{photo[0]}}'/></li>
+    <h8> {{photo[1]}}</h8>
+  {% endfor %}
+  {% endif %}
+  </div>
+  <li><a href = '/'> Home </a></li>
+</body>

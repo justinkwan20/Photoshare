@@ -1,0 +1,19 @@
+<head>
+  <title>Change Profile Picture </title>
+</head>
+<div class="title">
+  <h1> Change Profile Picture Here </h1>
+</div>
+<body>
+  {% if photo %}
+<div>
+  <h2> Current Profile Photo </h2>
+</div>
+  {% endif %}
+<form method="post" enctype="multipart/form-data" action="/changeProfile">
+  <label for="photo">Select photo:</label>
+  <input type="file" name="photo"/><br/>
+  <input type="submit" value="Upload" />
+  </form>
+  <li><a href='/'>Home</a></li>
+</body>
