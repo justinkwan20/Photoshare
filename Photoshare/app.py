@@ -660,7 +660,7 @@ def seeTagU():
 		return render_template('tagPhotos.html', pictures = allTagss)
 	else:
 		return render_template('tagSelectP.html', tags = test)
-	
+
 @app.route('/likePhoto', methods = ['GET', 'POST'])
 def likePhotos():
 	uid = getUserIdFromEmail(flask_login.current_user.id)
@@ -763,7 +763,16 @@ def tagPhoto():
 		return render_template('tagSelectP.html', tags = test)
 
 
-
+@app.route('/rest', methods = ['GET', 'POST'])
+def rest():
+	uid = getUserIdFromEmail(flask_login.current_user.id)
+	cursor = conn.cursor()
+	cursor.execute("SELECT aid, nameAlbum FROM Album")
+	returnAlbum = cursor.fetchall()
+	cursor.execute("SELECT imgdata FROM Pictures")
+	returnPictures = cursor.fetchall()
+	pictures = [[item[0]] for item in returnPictures]
+	return render_template('rest.html', nameFirst = getfName(uid), nameLast = getlName(uid),profilePhoto= getUserProfile(uid), pictures = pictures)
 
 
 
