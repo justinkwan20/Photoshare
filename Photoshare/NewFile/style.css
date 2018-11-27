@@ -1,0 +1,136 @@
+.section {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.section h1{
+  position: relative;
+  text-align: center;
+  font-size: 6rem;
+  font-family: "aqua_grotesqueregular";
+  padding: 20px;
+  margin: 15px;
+  z-index: 1;
+}
+
+.section h2 {
+  position: relative;
+  font-size: 10px;
+  font-family: "aqua_grotesqueregular";
+  padding: 20px;
+  margin-top: 15px;
+  z-index: 1;
+}
+
+.section a{
+  position: relative;
+  font-size: 6rem;
+  font-family: "aqua_grotesqueregular";
+  padding: 20px;
+  margin: 15px;
+  z-index: 1;
+}
+
+.btn-outline-light{
+  font-family: "aqua_grotesqueregular";
+  height: 65px;
+  width: 200px;
+  z-index: 1;
+}
+
+.modal {
+  text-align: center;
+  padding: 0!important;
+}
+
+.modal:before {
+  content: '';
+  display: inline-block;
+  height: 100%;
+  vertical-align: middle;
+  margin-right: -4px;
+}
+
+.modal-dialog {
+  display: inline-block;
+  text-align: left;
+  vertical-align: middle;
+}
+
+.modal-header {
+display: block!important;
+}
+
+.modal-title {
+float: left;
+}
+
+.modal-header .close {
+float: right;
+}
+
+.video-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+
+.color-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: black;
+  width: 100%;
+  height: 100vh;
+  opacity: 0.3;
+}
+
+.navigation{
+  padding-top:30px;
+  padding-bottom:30px;
+  position:absolute;
+  top:0;
+  width:100%;
+  z-index:1;
+}
+
+.navbar-right{
+  float:right;
+  padding-right:10%;
+}
+
+.navbar-right a{
+  text-decoration:none;
+  padding:10px;
+  color: #FFFFFF;
+  font-family:Arial;
+  font-weight:900;
+}
+
+.navbar-right a:hover{
+  text-decoration:underline;
+  color: #FFFFFF;
+}
+
+.navbar-logo{
+  padding-left:10%;
+  font-family:"anuratiregular";
+  font-size:30px;
+  font-weight:bold;
+  text-decoration:none;
+  color:#FFFFFF;
+}
