@@ -102,19 +102,4 @@ Flask Based web application that I built for my CS 460 class on databases. I use
 
 <span class="s1">Finally, you will create a web site for your database and add the photo sharing functionality.<span class="Apple-converted-space"></span></span>
 
-## <span class="s1">**Deliverable**</span>
 
-<span class="s1">You should provide two deliverables for this project. The first one is the database design and the second is the final system.</span>
-
-<span class="s1">Here are more details:</span>
-
-*   <span class="s4"></span><span class="s1">Friday, October <span class="Apple-converted-space"></span>6, at 5PM: You need to provide a report with the E/R diagram, the relational schema, the assumptions that you make, and the integrity constraints. You can submit the report either using gsubmit (to cs460/cs660) or handing in a hard copy report in the CS 460 drop box.  
-    </span>
-*   <span class="s4"></span><span class="s1">Thursday, October 26, at 11:59PM. The final report with the code and the additional assumptions that you made and the limitations of your system. In particular, you should submit using gsubmt the following:<span class="Apple-converted-space"></span></span>
-
-1.  <span class="s4"></span><span class="s1">The final report that should contain the final schema and any additional assumptions and constraints you made.<span class="Apple-converted-space"></span></span>
-2.  <span class="s4"></span><span class="s1">A zip file with the photoshare directory (all your code). Alternatively, you can gsubmit the photoshare directory.  
-    </span>
-
-<span class="s1">  
-</span>
