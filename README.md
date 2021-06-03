@@ -84,7 +84,7 @@ Flask Based web application that I built for my CS 460 class on databases. I use
 
 ### <span class="s1">**Implementation Tools**</span>
 
-<span class="s1">We will provide you with all the tools you need to complete this project. All queries to the database will be made via SQL statements. For this project, you are expected to be familiar with Python and SQL. Everything else will be explained or automated for you. The project is to be done in groups of two. You are allowed to talk with each other about the project but you are not allowed to share code or queries. If you have questions about the project you should ask the Instructor first.</span>
+<span class="s1">We will provide you with all the tools you need to complete this project. All queries to the database will be made via SQL statements. For this project, you are expected to be familiar with Python and SQL. Everything else will be explained or automated for you. If you have questions about the project you should ask the Instructor first.</span>
 
 ## <span class="s1">**Overview of Project Phases**</span>
 
