@@ -9,7 +9,6 @@ Flask Based web application that I built for my CS 460 class on databases. I use
 
 <span class="s1">In this project, you will design, implement and document a database system for a web based photo social sharing application. You need also to provide the web based interface to the database. The final system should be functional and will be similar to Flickr!</span>
 
-<span class="s1">To be done in groups of two. Please find your partner asap.</span>
 
 ## <span class="s1">**Data**</span>
 
