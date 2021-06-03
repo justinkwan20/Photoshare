@@ -1,16 +1,9 @@
 # Photoshare
-Flask Based web application that I built for my CS 460 class on databases. I used mysql database to store the data locally and used flask web framework in order to create the web application. At its current state its still rough, but I'll continue to develop this project.
+Flask Based web application that I built for my CS 460 class on databases. I used mysql database to store the data locally and used flask web framework in order to create the web application.
+
 # <span class="s1">**CS460/660 Project Assignment 1**</span>
 
 <span class="s1">**PhotoShare: An on-line photo social network system**</span>
-
-<span class="s1">**(To be done in groups of two.)**</span>
-
-## <span class="s1">**Deadlines**</span>
-
-<span class="s1">Database design report due: Friday, October 6, at 5PM.</span>
-
-<span class="s1">Final report and implementation due: Thursday, October 26, at 11:59PM.</span>
 
 ## <span class="s1">**Purpose of the project**</span>
 
